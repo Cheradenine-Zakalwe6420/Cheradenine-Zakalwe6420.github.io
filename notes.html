@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+	body {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-size: 100% 100%;
+    min-height: 100%;
+    min-width: 100%;
+    color: orange;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+      }
+      
+a{
+  color: orange;
+}
+
+a:visited{
+  color: violet;
+}
+
+h{
+  color: orange;
+}
+
+.banner {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('images/brain.jpg');
+  background-repeat: repeat-x;
+  animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#container {
+      column-count: 4;
+      column-gap: 20px;
+      padding: 20px;
+    }
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Information Repository</h1>
+    
+    
+    
+    <div style="white-space:pre">
+    
+  <h2 id="airplanes">Airplanes</h2>
+  
+  <h3>How Airplanes Fly - Wings</h3>
+  
+  <img src="https://qph.cf2.quoracdn.net/main-qimg-199710d55ac9a3165ce2d56953e59739">
+  
+  Airplane wings has a high pressure area under the wings with a low pressure area on the top of the wings. The top of the airplane wings is shaped
+  to make air move faster over the wings. This makes the pressure on top of the wing lesser than the pressure under the wing. The difference in pressure
+  creates a force on the wing that lifts the airplane into the air.
+	
+	<h3>Parts of an Airplane</h3>
+   
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.grc.nasa.gov%2FWWW%2FK-12%2Fairplane%2FImages%2Fairplane.gif&f=1&nofb=1&ipt=991cf15ec8a402dfddb59ec6e9ef66afb2401b71fc0375236009e2d1e973ffe5&ipo=images">
+   
+    1. Wing - generate lift
+   
+    2. Jet engine - generate thrust
+   
+    3. Cockpit - command and control
+   
+    4. Fuselage - hold things together. 
+   
+    5. Slats - changes lift
+   
+    6. Spoiler - change lift, drag and roll (rotate body)
+   
+    7. Aileron - change roll (rotate body)
+   
+    8. Flaps - change lift and drag
+   
+    9. Elevator - change pitch (up-down)
+   
+    10. Rudder - change yaw (side-to-side)
+   
+    11. Vertical Stabilizer - control yaw
+   
+    12. Horizontal Stabilizer - control pitch
+	
+	<h3>Forces Acting on an Airplane</h3>
+	
+	<img src="https://study.com/cimages/multimages/16/plane3314081343794590858.png">
+	
+	1. Lift
+	
+	2. Thrust
+	
+	3. Drag
+	
+	4. Gravity/Weight
+	
+	<h2 id="nuclear">Nuclear Fission & Fusion</h2>
+	
+	<b>Fission</b>
+	
+	The current model for nuclear fission occurs when a neutron hits Uranium-235 or Plutonium-238. Once hit, the Uranium-235 splits into Barium-141, Krypton-95 and 3 
+	excited neutrons.
+	
+	<b>Fusion</b>
+	
+	The current model for nuclear fusion occurs when the hydrogen isotopes, deuterium (hydrogen with 1 neutron) and tritium (hydrogen with 2 neutrons) are made to
+	collide with each other under intense plasma heat. The plasma breaks the Coloumb's barrier, allowing the isotopes to collide with ease - forming a helium 
+	(2 protons and 2 neutrons) and 1 excited neutron. The plasma are contained either through tokamaks or stellarator machines. To heat the plasma, 3 methods 
+	may be used: ohmic heating, neutral beam injection and RF heating.
+	
+	The tokamaks rely on toroidal magnetic field to keep the plasma together while the stellarators rely on helical coils to maintain the plasma together.
+	
+	<h2 id="transformers">Transformers</h2>
+	
+	Transformers in LLM reads a large amount of text as a whole at once. They either assign numbers and symbols on the text (tokenization), give scores on which text is 
+	important (attention scores), give numbers to indicate
+	which position the text is (position encoding). A transformer consists of stack and is layered through one another. The key components of the layers are Multi-Head 
+	Self-Attention (focuses on relationships between
+	words or tokens) and Feed-Forward Network (processes and refines the information obtained from attention).
+	
+	How stacking works?
+	
+	First Layer: You focus on basic shapes and colors - low-level features.
+	Second Layer: You notice patterns, like how shapes combine to form objects.
+	Third Layer: You start understanding the context e.g., the painting depicts a forest scene.
+	Final Layer: You grasp the abstract meaning, like the painters's emotional expression.
+	
+	1. Input Representation - Each token is a vector representing the word or subword in the context of the sequence.
+	
+	2. Self-Attention and FFN - The self-attention mechanism recalibrates each token's embedding by considering its relationships to other tokens. The feed-forward 
+	network 
+	applies transformations that enhance the embedding's depth and abstraction.
+	
+	3. Residual Connection - Each layer also adds a shortcut path (called a residual connection), bypassing its own computations and adding the input to the output.
+	4. Layer Normalization - At each layer, normalization is applied to stabilize training and ensure that inputs to the next layer remain well-scaled.
+	5. Stacking Continues - This process is repeated layer by layer, with each one refining the token representations further.
+	6. Final Output - After all layers, the final token embeddings are used for predictions (e.g., the next word, text classification, etc.).
+	
+	<h2 id="telnet-ssh">Telnet vs. SSH</h2>
+	
+	SSH stands for <b>Secure Shell</b> while Telnet stands for <b>Telecommunications and Networks</b>. They are used as a method for secure remote log-in
+	from one computer to another.
+	
+	SSH uses port 22 however the port can be changed while Telnet uses port 23 by default. SSH is sent by encrypted form while Telnet is less secure.
+	Telnet transfers data in text form while SSH uses Encrypted format to send data over a secure channel. SSH has required authentication while Telnet
+	doesn't require any authentication. SSH is used in public networks while Telnet is used in private networks only.
+	
+	<h2 id="alternating-current">Alternating Current</h2>
+	
+	Alternating current (AC) is a type of electric current in which the flow of electronics switches back and forth at regular intervals. AC is used
+	primarily in power distribution. It also changes magnitude with time, unlike direct current (DC) which only flows in one direction.
+	
+	<img src="https://www.allaboutcircuits.com/uploads/articles/direct-and-alternating-current-ac-dc.png">
+	Difference between AC and DC
+	
+	<h2 id="thermodynamics">Thermodynamics</h2>
+	
+	<h3>The Four Laws of thermodynamics</h3>
+	
+	Zeroth law - If two systems are in thermodynamic equilibrium with a third system, the two original systems are in thermal equilibrium with
+	one another.
+	
+	1st law - Energy can be converted from one form to another but it cannot be created nor destroyed, under any circumstances.
+	
+	2nd law - State of entropy of the entire system, as an isolated system, will increase over time. Changes in the entropy in the universe
+	can never be negative.
+	
+	3rd law - The value of entropy of a completely pure crystalline substance is zero at absolute zero temperature.
+	
+	<h2 id="operating-system">Operating System</h2>
+	
+	<h3>Parts of an Operating System</h3>
+	
+	<ul>
+	   <li>Process Management</li>
+	   <li>I/O Device Management</li>
+	   <li>File Management</li>
+	   <li>Network Management</li>
+	   <li>Main Memory Management</li>
+	   <li>Secondary Storage Management</li>
+	   <li>Security Management</li>
+	   <li>Command Interpreter System</li>
+	</ul>
+	
+	<h2 id="heat-transfer">Heat Transfer</h2>
+	
+	Heat transfer in 3 ways:
+	
+	1. Conduction - Heat is transferred by direct contact.
+	
+	2. Convection - Heat is transferred by movement of fluids and gas.
+	
+	3. Radiation - Heat is transferred through electro-magnetic waves.
+	
+	<b>How is heat transferred by convection?</b>
+	
+	1) Water is heated.
+	
+	2) Hot water at the bottom rises while colder water from the top sinks to the bottom.
+	
+	3) Repeat process until the water/fluid is entirely hot.
+	
+	<b>How is heat transferred by conduction?</b>
+	
+	Heat energy is transferred by collisions through atoms or molecules. When a solid absorbs heat, its atoms vibrate faster, 
+	these vibrations are transferred from atom to atom, creating heat. 
+	
+	<b>How heat is transferred by radiation?</b>
+	
+	Bodies such as the Sun emit thermal radiation due to movement of atoms and molecules. These particles emit electro-magnetic radiation
+	and heat is transferred by these electro-magnetic waves. Heat transfer through radiation does not need a medium to transfer heat.
+	
+	<h2 id="quantum-computer">Quantum Computer</h2>
+	
+	<h3>Types of Quantum computers</h3>
+	
+	1. Superconducting
+	
+	2. Photonic
+	
+	3. Trapped Ions
+	
+	4. Neutral Atoms
+	
+	5. Quantum Dots
+	
+	<h2 id="atoms">Atoms</h2>
+	
+	Atoms are the smallest unit of matter. They are made of nucleus (which contains the neutrons and protons) and the electrons that orbits the nucleus.
+	The neutrons and protons are made of particles called quarks while electrons are made of particles called leptons. Neutrons have 2 down quarks and 1
+	up quark while protons have 2 up quarks and 1 down quark.
+	
+	Baryonic matters are made of 3 quarks while mesons are made of 1 quark and 1 anti-quark. Protons and neutrons are baryonic matter.
+	
+	All neutrons, protons, electrons, neutrinos are fermions. Fermions have a spin value of half and odd integers (1/2, 3/2, 5/2...) while bosons
+	have a spin value of integer values (0, 1, 2, 3...).
+	</div>
+  </body>
+</html>
